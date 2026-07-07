@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#0f172a;
+
+    color:white;
+
+    font-family:Poppins,sans-serif;
+
+}
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    background:#111827ee;
+
+    backdrop-filter:blur(10px);
+
+    padding:20px 8%;
+
+}
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+nav h2{
+
+    color:#22d3ee;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:25px;
+
+    list-style:none;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#22d3ee;
+
+}
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding:120px 10%;
+
+}
+
+.hero img{
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #22d3ee;
+
+    box-shadow:0 0 30px #22d3ee55;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+}
+
+.hero h3{
+
+    color:#22d3ee;
+
+    margin:10px 0;
+
+}
+
+.hero p{
+
+    color:#cbd5e1;
+
+    max-width:500px;
+
+    margin-bottom:30px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:#22d3ee;
+
+    color:#0f172a;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 20px #22d3ee;
+
+}
+
+.card{
+
+    width:80%;
+
+    margin:40px auto;
+
+    background:#1e293b;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 25px rgba(0,255,255,.08);
+
+}
+
+.card h2{
+
+    color:#22d3ee;
+
+    margin-bottom:25px;
+
+}
+
+.box{
+
+    border-left:4px solid #22d3ee;
+
+    padding-left:20px;
+
+}
+
+.skill{
+
+    margin-bottom:20px;
+
+}
+
+.barra{
+
+    background:#334155;
+
+    height:12px;
+
+    border-radius:20px;
+
+    margin-top:8px;
+
+}
+
+.barra div{
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:linear-gradient(90deg,#22d3ee,#06b6d4);
+
+}
+
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#94a3b8;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.card{
+
+width:92%;
+
+}
+
+}
